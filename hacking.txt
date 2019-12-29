@@ -1,0 +1,69 @@
+#Formas de iniciar pesquisa na Web
+
+Pode usar "" Ex. "Daniel Moreno" - Vai retornar estritamente Daniel Moreno.
+
+(And) Inclui um termo na Busca - hacker+and cracker
+(OR) | Busca por um termo ou outro. Ex daniel | moreno
+(NOT)( ou -) Exclui um termo da busca. Ex daniel -moreno. Vai buscar apenas daniel.
+
+Operadores Especiais
+Filtros no google
+Exemplos: intitle:hacker. Exibe a busca com o termo no titulo.
+intitle:hacker security - Exibira os titulos hacker e security no titulo, na URL ou no texto
+intitle: security hacker - Exibierá no titulo security e hacker, na URL ou no texto.
+intitle:"security hacker" A busca retornará exatamente o titulo security hacker, excluindo aquelas com o titulo hacker security
+
+allintitle - Exibe paginas contendo todos os termos no titulo
+Ex - allintitle: security hacker
+Atenção - Não funciona bem com outros operadores como intitle.
+Consuta correta
+intitle:web intitle:pentest inurl:novatec
+
+inurl - Exibe paginas contendo os termos na URL
+Ex - inurl:livraria
+     inurl:livraria novatec
+     inurl:novatec livraria
+     inurl:"pentest daniel" Exibe exatamente na url pentest daniel
+
+allinurl - Exibe paginas contendo todos os termos na URL
+Ex - allinurl:security hacker
+Atenção - Não funciona bem com outros operadores. Deve ser usado de modo isolado
+Consulta correta
+inurl:novatec inurl:livraria intitle:editora
+
+intext - Exibe a pagina com o termo no texto
+Ex - intext:daniel
+     intext:daniel moreno
+Busca pelo termo exato
+     intext:"daniel moreno"
+
+allintext - Exibe todas as paginas com o termos no texto
+Ex - allintext:security hacker pdf site:novatec.com.br
+Atenção - Não funciona bem com outros operadores como ja mencionado acima.
+
+site - Busca um dominio especifico ou qualquer pagina.
+    site:novatec.com.br
+    inurl:novatec.com.br
+    site:novatec.com.br -inurl:www - Busca qualquer pagina no dominio, menos as que comecem com www.
+
+
+filetype ou ext - Busca por arquivos especificos.
+filetype:pdf site:novatec.com.br
+ext:pdf site:novatec.com.br
+
+link - Busca paginas com um link especifico
+link:"http://novatec.com.br"
+
+inanchor - Busca pela âncora especifica. Uma âncora é um texto para um link na URL.
+inanchor:"download"
+
+related - Busca paginas relacionadas com um assunto
+related:facebook.com
+
+numrange - Busca paginas que contenham numeros no intervalo.
+Ex - numrange:1-10 ou numrange:1..10
+Ex - 1..10 site:novatec.com.br
+
+
+
+	
